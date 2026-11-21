@@ -1,0 +1,16 @@
+.public-wrap {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+.public-header { background: var(--panel); border-bottom: 1px solid var(--border); }
+.public-header .public-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 62px;
+}
+.public-brand { color: var(--text); font-size: 1.35rem; font-weight: 750; }
+#public-catalog .page { padding-inline: 0; }
+@media (max-width: 520px) {
+  .public-wrap { width: calc(100% - 24px); }
+}
